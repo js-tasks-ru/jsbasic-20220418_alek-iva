@@ -1,3 +1,11 @@
 function showSalary(users, age) {
-  // ваш код...
+  let finalString = ''
+
+  users.forEach(user => {
+    if (user.age <= age) {
+      finalString += user.name + ', ' + user.balance + '\n'
+    }
+  });
+
+  return finalString.trim()
 }
